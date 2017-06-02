@@ -1,18 +1,45 @@
+/*********************************CSS**********************************/
 
-
-/* background image */
-.headerBg {
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    z-index: -1;
-    border: 5px solid black;
+/* Google Font */
+.text{
+	font-family: 'Barrio', cursive;
 }
+
+/********************************NavBar*******************************/
 
 /* Gets rid of navbar bottom margin so image is flush with navbar */
 .navbar{
 	margin-bottom: 0px !important;
 }	
+
+.nav-title{
+	font-size: 2.4em !important;
+	color: #3b0a51 !important;
+}
+
+.nav-links{
+	color: #3b0a51 !important;
+}
+
+.nav{
+	margin-left: 5% !important;
+}
+
+.text-button{
+	font-family: 'Barrio', cursive;
+	margin-left: 5%;
+}
+
+/******************Background Image Section***************************/
+
+/* background image */
+.headerBg {
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    border: 5px solid black;
+}
 
 /* Test Box which position is relative to background image and centered */
 #loginBox {
@@ -25,11 +52,14 @@
 
 /* Various text */
 .main-title{
-	padding-top: 30%;
+	font-family: 'Barrio', cursive;
+	padding-top: 20%;
 	margin-top: 0;
 	color: white;
+	font-size: 9em;
 }
 
 .main-desc{
+	font-family: 'Barrio', cursive;
 	color: white;
 }
