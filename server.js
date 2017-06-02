@@ -3,6 +3,9 @@ var express = require("express");
 var mongojs = require("mongojs");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
+var express = require("express");
+var request = require("request");
+var cheerio = require("cheerio");
 
 var app = express();
 
@@ -14,8 +17,8 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // Database configuration
-var databaseUrl = "week18day2";
-var collections = ["notes"];
+var databaseUrl = "scraper";
+var collections = ["items"];
 
 // Hook mongojs config to db variable
 var db = mongojs(databaseUrl, collections);
@@ -31,12 +34,13 @@ db.on("error", function(error) {
 
 // Simple index route
 app.get("/", function(req, res) {
-  res.send(index.html);
+	res.send(index.html);
 });
 
+app.get("/items", function(req, res) {
+	
 
-
-
+});
 
 
 
