@@ -36,9 +36,9 @@
 .headerBg {
     position: absolute;
     width: 100%;
-    height: 55%;
-    z-index: -1;
+    height: 70%;
     border: 5px solid black;
+    z-index: -1;
 }
 
 /* Test Box which position is relative to background image and centered */
@@ -47,7 +47,7 @@
     float: center;
     margin: auto;
     width: 25%;
-    height: 25px;
+    height: 80%;
 }
 
 /* Various text */
@@ -62,4 +62,13 @@
 .main-desc{
 	font-family: 'Barrio', cursive;
 	color: white;
+}
+
+/***************************** Panel Portion ***********************/
+
+#panel-div{
+	margin-top: 5%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
