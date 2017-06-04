@@ -8,10 +8,9 @@ $(".text-button").on("click", function(){
 	console.log('article scrap button clicked');
 
 	$.getJSON("/articles", function(data){
+		// Test Logs
 		console.log(data[0].title);
 		console.log(data[0].text);
-
-
 
 		for(var i = 0 ; i < data.length ; i++){
 
@@ -30,8 +29,6 @@ $(".text-button").on("click", function(){
 	}); //getJSON call
 	
 }); // onClick end
-
-
 
 $(document).on("click", ".containerDiv", function() {
 	console.log("You clicked div id#: " + $(this).attr("data-id"))
