@@ -99,6 +99,10 @@ app.get("/scrape", function(req, res) {
 });
 
 
+app.get("/savedArticles", function(req, res) {
+
+});
+
 
 
 // Listen on port 3000
