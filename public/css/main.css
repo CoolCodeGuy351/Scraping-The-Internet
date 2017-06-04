@@ -5,6 +5,10 @@
 	font-family: 'Barrio', cursive;
 }
 
+#bot-con{
+    background-image: linear-gradient(#aa0de2, #6b0091, #470060, #1e0028);
+}
+
 /********************************NavBar*******************************/
 
 /* Gets rid of navbar bottom margin so image is flush with navbar */
@@ -62,13 +66,18 @@
 .main-desc{
 	font-family: 'Barrio', cursive;
 	color: white;
+	margin-bottom: 13%;
 }
 
 /***************************** Panel Portion ***********************/
 
 #panel-div{
-	margin-top: 5%;
+	margin-top: 3%;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#article-image{
+	float: left;
 }
