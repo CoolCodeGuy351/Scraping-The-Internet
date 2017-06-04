@@ -16,6 +16,7 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({
   extended: false
 }));
+
 app.use(express.static("public"));
 
 // Database configuration with mongoose
@@ -47,8 +48,15 @@ app.get("/", function(req, res) {
 	res.send(index.html);
 });
 
-app.get("/items", function(req, res) {
-	
+app.get("/articles", function(req, res) {
+	Article.find({}, function(err, found){
+		if (err){
+			console.log(err);
+		} else {
+			console.log(found);
+			res.json(found);
+		}
+	});
 
 });
 
