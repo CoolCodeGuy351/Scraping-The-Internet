@@ -100,7 +100,7 @@ app.get("/scrape", function(req, res) {
 
 
 app.get("/savedArticles", function(req, res) {
-
+	// need to create saved articles into db so they can be renderd to screen
 });
 
 
