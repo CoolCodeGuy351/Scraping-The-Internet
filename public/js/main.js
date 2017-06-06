@@ -42,6 +42,8 @@ $(document).on("click", ".containerDiv", function() {
     // With that done, add the note information to the page
     .done(function(data) {
 	console.log("You clicked div id#: " + $(this).attr("data-id"));
+	});
+
 });
 
 }); // End document ready function
