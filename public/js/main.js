@@ -32,6 +32,15 @@ $(".text-button").on("click", function(){
 
 $(document).on("click", ".containerDiv", function() {
 	// On click i need to save which ever div is clicked to the data base. 
+
+	var thisId = $(this).attr("data-id");
+
+	$.ajax({
+    method: "GET",
+    url: "/articles/" + thisId
+  	})
+    // With that done, add the note information to the page
+    .done(function(data) {
 	console.log("You clicked div id#: " + $(this).attr("data-id"));
 });
 

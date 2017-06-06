@@ -104,6 +104,33 @@ app.get("/savedArticles", function(req, res) {
 	// need to create saved articles into db so they can be renderd to screen
 });
 
+router.post('/articles/:id', function(req, res) {
+
+    var comment = new Comment({
+        body: req.body.body
+    });
+
+
+    comment.save(function(err, result) {
+        if (err) {
+            console.log(err);
+        } else {
+
+
+            Article.findOneAndUpdate({ '_id': req.body.id }, { $push: { 'comment': result._id } }, { new: true }, function(err, result) {
+                
+                if (err) {
+                    console.log(err);
+                } else {
+
+                    //takes you back to saved results
+                    res.redirect('/saved');
+                }
+            });
+        }
+    });
+});
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
