@@ -32,7 +32,7 @@ $(".text-button").on("click", function(){
 
 $(document).on("click", ".containerDiv", function() {
 	// On click i need to save which ever div is clicked to the data base. 
-	console.log("You clicked div id#: " + $(this).attr("data-id"))
+	console.log("You clicked div id#: " + $(this).attr("data-id"));
 });
 
 }); // End document ready function
